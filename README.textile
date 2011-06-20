@@ -1,0 +1,37 @@
+h1. Refactoring
+
+bq.. 
+"Refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behaviour. Its heart is a series of small behaviour preserving transformations. Each transformation (called a 'refactoring') does little, but a sequence of transformations can produce a significant restructuring."
+__~ Martin Fowler http://www.refactoring.com/__
+
+h2. Smells
+
+Code smells are the metaphor used to describe how problems with the design manifest; "the book":http://www.amazon.co.uk/Refactoring-Improving-Design-Existing-Technology/dp/0201485672 describes the smells and suggests which refactoring(s) could be used to address the underlying problem.
+
+These are some of the most common 'smells' you might find in larger code bases
+# Duplicated Code (p.76)
+# Long Method (p.76)
+# Large Class (p.78)
+# Feature Envy (p.80)
+# Switch Statements (p.82)
+# Speculative Generality (p.83)
+# Data Class (p.86)
+# Comments (p.87)
+
+The refactorings that can be used to address them
+* Extract Method (p.110)
+* Form Template Method (p.345)
+* Rename Method (p.273)
+* Move Method (p.142)
+* Introduce Explaining Variable (p.124)
+* Replace Magic Number with Symbolic Constant (p.204)
+* Extract Class (p.149)
+* Extract Subclass (p.330)
+* Pull Up Method (p.322)
+* Replace Method with Method Object (p.135)
+* Replace Data Value With Object (p.175)
+* Encapsulate Collection (p.208)
+* Decompose Conditional (p.238)
+* Replace Conditional With Polymorphism (p.255)
+* Replace Type Code With State/Strategy (p.227)
+* Introduce Null Object (p.260) 
