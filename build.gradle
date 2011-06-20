@@ -1,13 +1,11 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-
-eclipseCp.outputDirectory ='ide/build'
-
-repositories {
-  mavenCentral()
-  mavenRepo urls: "https://collaborate.bt.com/artefacts/content/groups/public"
-}
-
-dependencies {
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+	apply plugin: 'idea'
+	
+	eclipseClasspath.outputDirectory ='ide/build'
+	
+	dependencies {
+		testCompile 'junit:junit:4.8.2'
+	}
 }

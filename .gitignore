@@ -4,4 +4,6 @@ build
 .classpath.old
 .gradle
 ide
+.metadata/
 .project
+.settings
