@@ -10,36 +10,30 @@ Code smells are the metaphor used to describe how problems with the design manif
 
 These are some of the most common 'smells' you might find in larger code bases
 
-h3. Duplicated Code (p.76)
-
-Duplication in code leads to multiple places to 
-* make changes
-* fix bugs
-
-Handle duplication by running e.g.
-* __Extract Method__
-* __Form Template Method__
-
-h3. Long Method (p.76)
-
-h3. Large Class (p.78)
-
-h3. Feature Envy (p.80)
-
-h3. Switch Statements (p.82)
-
-h3. Speculative Generality (p.83)
-
-h3. Data Class (p.86)
-
-h3. Comments (p.87)
+# Duplicated Code (p.76)
+# Long Method (p.76)
+# Large Class (p.78)
+# Feature Envy (p.80)
+# Switch Statements (p.82)
+# Speculative Generality (p.83)
+# Data Class (p.86)
+# Comments (p.87)
 
 The refactorings that can be used to address them
-* Extract Method (p.110)
+* *Extract Method (p.110)* - to remove duplication and make code more descriptive
+** Closely related to Extract Class and Introduce Explaining Variable
+** Pull out the things that change between the duplicated blocks: usually values to local variables
+** Highlight one of the duplicated blocks and use the IDE refactoring to extract method
+*** Give it a meaningful name, similarly for the parameters 
+
+* *Introduce Explaining Variable (p.124)* - to remove duplication and make code more descriptive
+** Identify the expression that needs some explanation
+** Highlight the expression and use the IDE refactoring to replace all occurrences
+*** Choose a meaningful name
+
 * Form Template Method (p.345)
 * Rename Method (p.273)
 * Move Method (p.142)
-* Introduce Explaining Variable (p.124)
 * Replace Magic Number with Symbolic Constant (p.204)
 * Extract Class (p.149)
 * Extract Subclass (p.330)
