@@ -9,14 +9,30 @@ h2. Smells
 Code smells are the metaphor used to describe how problems with the design manifest; "the book":http://www.amazon.co.uk/Refactoring-Improving-Design-Existing-Technology/dp/0201485672 describes the smells and suggests which refactoring(s) could be used to address the underlying problem.
 
 These are some of the most common 'smells' you might find in larger code bases
-# Duplicated Code (p.76)
-# Long Method (p.76)
-# Large Class (p.78)
-# Feature Envy (p.80)
-# Switch Statements (p.82)
-# Speculative Generality (p.83)
-# Data Class (p.86)
-# Comments (p.87)
+
+h3. Duplicated Code (p.76)
+
+Duplication in code leads to multiple places to 
+* make changes
+* fix bugs
+
+Handle duplication by running e.g.
+* __Extract Method__
+* __Form Template Method__
+
+h3. Long Method (p.76)
+
+h3. Large Class (p.78)
+
+h3. Feature Envy (p.80)
+
+h3. Switch Statements (p.82)
+
+h3. Speculative Generality (p.83)
+
+h3. Data Class (p.86)
+
+h3. Comments (p.87)
 
 The refactorings that can be used to address them
 * Extract Method (p.110)
