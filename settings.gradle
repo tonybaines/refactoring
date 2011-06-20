@@ -1,1 +1,1 @@
-include '!overview', 'duplicated-code'
+include 'duplication'
