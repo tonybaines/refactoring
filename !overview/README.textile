@@ -31,13 +31,17 @@ The refactorings that can be used to address them
 ** Highlight the expression and use the IDE refactoring to replace all occurrences
 *** Choose a meaningful name
 
-* Form Template Method (p.345)
+Anna
 * Rename Method (p.273)
-* Move Method (p.142)
 * Replace Magic Number with Symbolic Constant (p.204)
+
+Jon
 * Extract Class (p.149)
-* Extract Subclass (p.330)
 * Pull Up Method (p.322)
+
+* Form Template Method (p.345)
+* Move Method (p.142)
+* Extract Subclass (p.330)
 * Replace Method with Method Object (p.135)
 * Replace Data Value With Object (p.175)
 * Encapsulate Collection (p.208)
